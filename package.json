@@ -1,0 +1,22 @@
+{
+  "name": "fog-sagnac-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fiber-optic gyroscope Sagnac phase computation kernel (HTTP-only backend)",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/index.js",
+    "test": "npm run build && node --test dist/test/"
+  },
+  "dependencies": {
+    "fastify": "^4.28.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
