@@ -1,0 +1,22 @@
+{
+  "name": "fog-sagnac-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "光纤陀螺 Sagnac 干涉相位计算内核（正算 / 反演 / 扫描）",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "build:test": "tsc -p tsconfig.test.json",
+    "start": "node dist/index.js",
+    "test": "npm run build:test && node --test build-test/test/*.test.js"
+  },
+  "dependencies": {
+    "fastify": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.7.0"
+  }
+}
